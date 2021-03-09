@@ -1,0 +1,22 @@
+
+.main-left {
+    img {
+        width: 80%;
+        background-image: url(/public/img/login-a.jpg);
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: 80%;
+    }
+}
+
+.main-right {
+    .login-logo {
+        width: 30%;
+        // temporal background
+        background-color: white;
+    }
+    .login-or {
+        display: flex;
+    }
+}

@@ -5,16 +5,16 @@
 <h1 align="center">Instagram Clone</h1>
 
 ## What are the main objectives in this project?
-- Learn the basics of SASS
+- Learn the basics of Sass
 - Improve your HTML skills
-- Learn how to work with HTML and SASS
+- Learn how to work with HTML and Sass
 - Improve your frontend knowledge
-- Improve your SASS knowledge
+- Improve your Sass knowledge
 
 # Theory
 
-## 1. What is SASS? What does SASS stand for?
-**S**yntactically **A**wesome **S**tylesheets or **SASS** is a stylesheet
+## 1. What is Sass? What does Sass stand for?
+**S**yntactically **A**wesome **S**tylesheets or **Sass** is a stylesheet
 language that’s compiled to CSS. It allows you to use variables, nested rules,
 mixins, functions, and more, all with a fully CSS-compatible syntax.  
 
@@ -29,14 +29,14 @@ mixin, nesting selector, inheritance selector, and so on.
 
 These features make the CSS structure more readable and easier to maintain.
 
-## 3. What does a pre-processor have to do with SASS?
-SASS it's a CSS pre-processor.
+## 3. What does a pre-processor have to do with Sass?
+Sass it's a CSS pre-processor.
 
-## 4. Why use SASS?
+## 4. Why use Sass?
 Its a cool alternative that can save time when used right.
 Gives the opportunity to the developer to write less and adds a "better" syntax.
 
-## 5. SASS has disadvantages? Which are?
+## 5. Sass has disadvantages? Which are?
   
 - Code has to be compiled.
 
@@ -44,9 +44,9 @@ Gives the opportunity to the developer to write less and adds a "better" syntax.
 
 - Some browser inspector functionalities are lost.
 
-## 6. What is a SASS Variable? Explain why are useful and explain with an example
-Like in JavaScript or other languages, SASS can make use of variables, where you
-can save colors, font stacks or any CSS value. SASS uses the 💲 sign to declare
+## 6. What is a Sass Variable? Explain why are useful and explain with an example
+Like in JavaScript or other languages, Sass can make use of variables, where you
+can save colors, font stacks or any CSS value. Sass uses the 💲 sign to declare
 a variable.
 
 ```sass
@@ -61,8 +61,8 @@ body
 ## 8. What is a mixin? Why is it important? Give an example
 Mixins are templates of groups of declarations that you can reuse. You can pass
 in values to make the mixins more flexible. To create a mixin you use the 
-`@mixin` directive to give it a name `@mixin transform` in SCSS and `=transform`
-in SASS.
+`@mixin` directive to give it a name `@mixin transform` in Scss and `=transform`
+in Sass.
 
 ```sass
 =transform($property)
@@ -73,16 +73,16 @@ in SASS.
   +transform(rotate(30deg))
 ```
 
-## 9. What is SCSS? What is SASS? And the difference between .scss and .sass syntax?
+## 9. What is Scss? What is Sass? And the difference between .scss and .sass syntax?
 Sass supports two different syntaxes. Each one can load the other, so it's up
 to you and your team which one to choose.
 
-The SCSS syntax uses the file extension .scss. With a few small exceptions, it’s
-a superset of CSS, which means essentially all valid CSS is valid SCSS as well.
+The Scss syntax uses the file extension .scss. With a few small exceptions, it’s
+a superset of CSS, which means essentially all valid CSS is valid Scss as well.
 Because of its similarity to CSS, it’s the easiest syntax to get used to and the
 most popular.
 
-SCSS:  
+Scss:  
 
 ```scss
 @mixin border-base($color) {
@@ -90,20 +90,20 @@ SCSS:
 }
 ```
 
-SASS:  
+Sass:  
 
 ```sass
 =border-base($color) 
     border: 1px solid $color
 ```
 
-## 12. In which cases would we use SCSS? And in which cases would we use SASS?
+## 12. In which cases would we use Scss? And in which cases would we use Sass?
 It's a matter of preference.
 
 ## 13. Explain how traditional CSS and Preprocessed CSS workflows are different
 In Preprocessed CSS workflows you can organize better to DRY. 
 
-## 14. Can we create functions with SASS? If it is true, give an example.
+## 14. Can we create functions with Sass? If it is true, give an example.
 
 ```scss
 @function sum($numbers...) {
@@ -159,7 +159,7 @@ nav
     text-decoration: none
 ```
 
-With the syntax of SCSS will be like this:
+With the syntax of Scss will be like this:
 
 ```scss
 nav {
@@ -176,9 +176,9 @@ nav {
 The main difference its how they handle the load. `@import` makes all globally
 accessible. This enables an endless chain of imported files where it's difficult
 to trace where your variables and mixins are coming from. Thats why `@import`
-isn't recommended anymore by SASS.
+isn't recommended anymore by Sass.
 
-## 17. How can we import other CSS/SASS files in SASS? Give an example
+## 17. How can we import other CSS/Sass files in Sass? Give an example
 The file to import will be `_reset.sass`
 
 ```sass
@@ -200,7 +200,7 @@ body
     background-color: #efefef
 ```
 
-## 18. Explain the concept of inheritance in SASS
+## 18. Explain the concept of inheritance in Sass
 
 This is one of the most useful features of Sass. Using @extend lets you share a
 set of CSS properties from one selector to another.  

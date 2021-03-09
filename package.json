@@ -1,0 +1,24 @@
+{
+    "name": "sass-instagram-clone",
+    "version": "1.0.0",
+    "description": "<p align=\"center\"> <img width=\"250px\" src=\"https://miro.medium.com/max/3200/0*60fCTW6UBREafLE8.png\"/> </p>",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass -w source/sass -o public/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/marcelarie/sass-instagram-clone.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/marcelarie/sass-instagram-clone/issues"
+    },
+    "homepage": "https://github.com/marcelarie/sass-instagram-clone#readme",
+    "devDependencies": {
+        "node-sass": "^5.0.0"
+    }
+}

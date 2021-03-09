@@ -4,6 +4,11 @@
 
 <h1 align="center">Instagram Clone</h1>
 
+# Points to talk about
+1. @import its depreacated, use @use and @forward instead
+2. npm-sass module and script
+3. Sass file structure (base, components, helpers, layout)
+
 ## What are the main objectives in this project?
 - Learn the basics of Sass
 - Improve your HTML skills

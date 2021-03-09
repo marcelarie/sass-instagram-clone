@@ -1,0 +1,6 @@
+@use 'base';
+
+body {
+    font-size: 5em;
+    background-color: base.$red;
+}

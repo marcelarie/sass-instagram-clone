@@ -1,6 +1,5 @@
 @use 'base';
+@use 'layout';
+@use 'helpers';
+@use 'components';
 
-body {
-    font-size: 5em;
-    background-color: base.$red;
-}

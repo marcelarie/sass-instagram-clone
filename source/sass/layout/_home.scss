@@ -34,3 +34,80 @@ nav {
         }
     }
 }
+
+.post {
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid colors.$gray;
+    border-radius: 5px;
+
+    .post-nav {
+        padding: 0.8rem 1rem;
+        display: flex;
+        align-items: middle;
+        border-bottom: 1px solid colors.$gray;
+            
+        img {
+            border-radius: 50%;
+            height: 2.5rem;
+        }
+
+        .nav-user {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin: 0 1rem;
+            a {
+                font-size: 0.9rem;
+            }
+            a:first-child {
+                font-weight: 600;
+                letter-spacing: 0.03rem;
+            }
+            a:last-child {
+                font-weight: 300;
+                font-size: smaller;
+            }
+        }
+        .post-config {
+            margin-left: auto;
+            font-size: 1.5rem;
+        }
+
+    }
+    .post-image {
+        img {
+            width: 100%;
+        }
+    }
+    .post-actions {
+        .post-actions__control {
+            display: flex;
+            img {
+                height: 1.7rem;
+                margin: 0.5rem;
+            }
+            img:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+    .post-likes {
+        padding: 0.5rem 1rem;
+        display: flex;
+        img {
+            height: 1.4rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+        }
+        p {
+            align-self: center;
+            font-size: 0.95rem;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}

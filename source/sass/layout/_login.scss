@@ -1,22 +1,87 @@
+@use '../base/colors';
 
-.main-left {
-    img {
-        width: 80%;
-        background-image: url(/public/img/login-a.jpg);
-        background-repeat: no-repeat;
-        background-position-x: 50%;
-        background-position-y: 50%;
-        background-size: 80%;
-    }
+body {
+    width: 70vw;
+    margin: 5rem auto;
 }
 
-.main-right {
-    .login-logo {
-        width: 30%;
-        // temporal background
-        background-color: white;
-    }
-    .login-or {
+main {
+    .main-left {
         display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        img {
+            width: 95%;
+            background-image: url(/public/img/login-a.jpg);
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-position-y: 50%;
+            background-size: 80%;
+        }
+    }
+
+    .main-right {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid colors.$lightGray;
+        padding: 1rem 2rem;
+
+        .login {
+            display: flex;
+            flex-direction: column;
+
+            .login-logo {
+                width: 180px;
+                margin: 0 auto;
+            }
+
+            .login-form {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 2em 0;
+                }
+                input {
+                    border: 1px solid colors.$lightGray;
+                    padding: 9px 0 7px 8px;
+                    text-align: left;
+                    font-size: 0.8em;
+                    min-width: 250px;
+                    border-radius: 2.5px;
+                    margin-bottom: 0.5em;
+                    color: colors.$gray;
+                    vertical-align: middle;
+                    text-overflow: ellipsis;
+                    margin-bottom: 1em;
+                }
+                input:focus {
+                    background-color: colors.$extraLightBlue;
+                    border: 1px solid colors.$gray;
+                    outline: none;
+                }
+
+                button {
+                    background-color: colors.$lightBlue;
+                    color: white;
+                    font-weight: bold;
+                    padding: 0.5em 3em;
+                    width: 250px;
+                    border-radius: 3px;
+                }
+            }
+
+            .login-facebook {
+                border-top: 1px solid colors.$lightGray;
+
+                legend {
+                    text-align: center;
+                    padding: 1em;
+                    color: colors.$gray;
+                    font-weight: bold;
+                    font-size: 0.9em;
+                }
+            }
+        }
     }
 }

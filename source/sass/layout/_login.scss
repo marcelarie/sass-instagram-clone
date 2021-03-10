@@ -1,87 +1,163 @@
 @use '../base/colors';
+@use '../base/fonts';
 
 body {
     width: 70vw;
-    margin: 5rem auto;
-}
+    margin: 7rem auto;
+    font-family: fonts.$roboto;
+    display: flex;
+    flex-direction: column;
+    min-height: 90%;
 
-main {
-    .main-left {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        img {
-            width: 95%;
-            background-image: url(/public/img/login-a.jpg);
-            background-repeat: no-repeat;
-            background-position-x: 50%;
-            background-position-y: 50%;
-            background-size: 80%;
+    main {
+        padding-bottom: 2rem;
+        .main-left {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            img {
+                width: 95%;
+                background-image: url(/public/img/login-a.jpg);
+                background-repeat: no-repeat;
+                background-position-x: 50%;
+                background-position-y: 50%;
+                background-size: 80%;
+            }
         }
-    }
 
-    .main-right {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid colors.$lightGray;
-        padding: 1rem 2rem;
-
-        .login {
+        .main-right {
             display: flex;
             flex-direction: column;
+            margin-top: 2em;
 
-            .login-logo {
-                width: 180px;
-                margin: 0 auto;
+            .login {
+                border: 1px solid colors.$light-gray;
+                padding: 1rem 2rem 0 2rem;
+                display: flex;
+                flex-direction: column;
+
+                .login-logo {
+                    width: 180px;
+                    margin: 0 auto;
+                }
+
+                .login-form {
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 2em 0 0 0;
+                    }
+
+                    input {
+                        border: 1px solid colors.$light-gray;
+                        padding: 9px 0 10px 8px;
+                        text-align: left;
+                        font-size: 0.8em;
+                        min-width: 250px;
+                        border-radius: 2.5px;
+                        margin-bottom: 0.5em;
+                        color: colors.$gray;
+                        vertical-align: middle;
+                        text-overflow: ellipsis;
+                        margin-bottom: 1em;
+                    }
+
+                    input:focus {
+                        background-color: colors.$extra-light-blue;
+                        border: 1px solid colors.$gray;
+                        outline: none;
+                    }
+
+                    button {
+                        background-color: colors.$light-blue;
+                        color: white;
+                        font-weight: bold;
+                        padding: 0.5em 3em;
+                        width: 250px;
+                        border-radius: 3px;
+                    }
+                }
+
+                .login-facebook {
+                    border-top: 1px solid colors.$light-gray;
+
+                    legend {
+                            text-align: center;
+                            padding: 1em;
+                            color: colors.$gray;
+                            font-weight: bold;
+                            font-size: 0.9em;
+                        }
+
+                        .login-facebook__button {
+                            display: flex;
+                            justify-content: center;
+                            margin: 0.5em 0;
+
+                            img {
+                                width: 25px;
+                                margin: 0 0.3em;
+                            }
+                            a {
+                                margin: auto 0;
+                                color: colors.$facebook-blue;
+                                font-weight: 500;
+                                font-size: 0.9em;
+                            }
+                        }
+
+                        .login-facebook__password {
+                            font-size: 0.8em;
+                            text-align: center;
+                            align-self: center;
+                            margin: 2em;
+                        }
+
+                }
+
             }
-
-            .login-form {
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 2em 0;
-                }
-                input {
-                    border: 1px solid colors.$lightGray;
-                    padding: 9px 0 7px 8px;
-                    text-align: left;
-                    font-size: 0.8em;
-                    min-width: 250px;
-                    border-radius: 2.5px;
-                    margin-bottom: 0.5em;
-                    color: colors.$gray;
-                    vertical-align: middle;
-                    text-overflow: ellipsis;
-                    margin-bottom: 1em;
-                }
-                input:focus {
-                    background-color: colors.$extraLightBlue;
-                    border: 1px solid colors.$gray;
-                    outline: none;
-                }
-
-                button {
-                    background-color: colors.$lightBlue;
-                    color: white;
-                    font-weight: bold;
-                    padding: 0.5em 3em;
-                    width: 250px;
-                    border-radius: 3px;
-                }
-            }
-
-            .login-facebook {
-                border-top: 1px solid colors.$lightGray;
-
-                legend {
+            .sing {
+                border: 1px solid colors.$light-gray;
+                padding: 1.35rem 2rem;
+                margin-top: 1em;
+                 
+                p {
+                    font-size: 0.9rem;
                     text-align: center;
-                    padding: 1em;
-                    color: colors.$gray;
+                }
+                a {
                     font-weight: bold;
-                    font-size: 0.9em;
+                }
+            }
+            .download {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem 1rem;
+                div {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    margin: 1em 0;
+                }
+                img {
+                    width: 130px;
                 }
             }
         }
     }
+        
+    footer {
+        margin-top: auto;
+        margin-bottom: 5rem;
+        text-align: center;
+        a {
+            font-size: 0.8rem;
+            margin: 0 0.5rem;
+        }
+    }
 }
+
+
+

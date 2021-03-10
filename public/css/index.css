@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+}
+
+html {
+  height: 100%;
 }
 
 input {
@@ -17,15 +22,21 @@ ol, ul {
 
 body {
   width: 70vw;
-  margin: 5rem auto;
+  margin: 7rem auto;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 90%;
 }
-
-main .main-left {
+body main {
+  padding-bottom: 2rem;
+}
+body main .main-left {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
-main .main-left img {
+body main .main-left img {
   width: 95%;
   background-image: url(/public/img/login-a.jpg);
   background-repeat: no-repeat;
@@ -33,29 +44,30 @@ main .main-left img {
   background-position-y: 50%;
   background-size: 80%;
 }
-main .main-right {
+body main .main-right {
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
+}
+body main .main-right .login {
   border: 1px solid #DBDBDB;
-  padding: 1rem 2rem;
-}
-main .main-right .login {
+  padding: 1rem 2rem 0 2rem;
   display: flex;
   flex-direction: column;
 }
-main .main-right .login .login-logo {
+body main .main-right .login .login-logo {
   width: 180px;
   margin: 0 auto;
 }
-main .main-right .login .login-form form {
+body main .main-right .login .login-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em 0;
+  margin: 2em 0 0 0;
 }
-main .main-right .login .login-form input {
+body main .main-right .login .login-form input {
   border: 1px solid #DBDBDB;
-  padding: 9px 0 7px 8px;
+  padding: 9px 0 10px 8px;
   text-align: left;
   font-size: 0.8em;
   min-width: 250px;
@@ -66,12 +78,12 @@ main .main-right .login .login-form input {
   text-overflow: ellipsis;
   margin-bottom: 1em;
 }
-main .main-right .login .login-form input:focus {
+body main .main-right .login .login-form input:focus {
   background-color: #E8F0FE;
   border: 1px solid #8E8E8E;
   outline: none;
 }
-main .main-right .login .login-form button {
+body main .main-right .login .login-form button {
   background-color: #B2DFFC;
   color: white;
   font-weight: bold;
@@ -79,15 +91,72 @@ main .main-right .login .login-form button {
   width: 250px;
   border-radius: 3px;
 }
-main .main-right .login .login-facebook {
+body main .main-right .login .login-facebook {
   border-top: 1px solid #DBDBDB;
 }
-main .main-right .login .login-facebook legend {
+body main .main-right .login .login-facebook legend {
   text-align: center;
   padding: 1em;
   color: #8E8E8E;
   font-weight: bold;
   font-size: 0.9em;
+}
+body main .main-right .login .login-facebook .login-facebook__button {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0;
+}
+body main .main-right .login .login-facebook .login-facebook__button img {
+  width: 25px;
+  margin: 0 0.3em;
+}
+body main .main-right .login .login-facebook .login-facebook__button a {
+  margin: auto 0;
+  color: #385185;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+body main .main-right .login .login-facebook .login-facebook__password {
+  font-size: 0.8em;
+  text-align: center;
+  align-self: center;
+  margin: 2em;
+}
+body main .main-right .sing {
+  border: 1px solid #DBDBDB;
+  padding: 1.35rem 2rem;
+  margin-top: 1em;
+}
+body main .main-right .sing p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+body main .main-right .sing a {
+  font-weight: bold;
+}
+body main .main-right .download {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+body main .main-right .download div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 1em 0;
+}
+body main .main-right .download img {
+  width: 130px;
+}
+body footer {
+  margin-top: auto;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+body footer a {
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
 }
 
 main {

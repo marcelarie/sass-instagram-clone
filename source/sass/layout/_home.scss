@@ -95,7 +95,7 @@ nav {
         }
     }
     .post-likes {
-        padding: 0.5rem 1rem;
+        padding: 0.2rem 1rem;
         display: flex;
         img {
             height: 1.4rem;
@@ -108,6 +108,49 @@ nav {
             span {
                 font-weight: 600;
             }
+        }
+    }
+    .post-description {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+
+        span {
+            color: colors.$gray;
+        }
+        p:first-child {
+            font-weight: 500;
+            margin-right: 0.5rem;
+        }
+    }
+    .post-time {
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+        font-weight: 400;
+        color: colors.$gray;
+        margin-bottom: 0.5rem;
+    }
+    .post-add-comment {
+        display: flex;
+        border-top: 1px solid colors.$gray;
+        padding: 0.5rem 0.7rem;
+        align-items: center;
+
+        img {
+            height: 2rem;
+        }
+
+        input {
+            flex: 1;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            color: colors.$gray;
+        }
+        button {
+            margin-left: auto;
+            all: unset;
+            color: colors.$blue;
+            font-weight: 500;
         }
     }
 }

@@ -264,7 +264,7 @@ nav .nav-control img:last-child {
   margin-left: auto;
 }
 .post .post-likes {
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   display: flex;
 }
 .post .post-likes img {
@@ -278,6 +278,46 @@ nav .nav-control img:last-child {
 }
 .post .post-likes p span {
   font-weight: 600;
+}
+.post .post-description {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.post .post-description span {
+  color: #8E8E8E;
+}
+.post .post-description p:first-child {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+.post .post-time {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
+  font-weight: 400;
+  color: #8E8E8E;
+  margin-bottom: 0.5rem;
+}
+.post .post-add-comment {
+  display: flex;
+  border-top: 1px solid #8E8E8E;
+  padding: 0.5rem 0.7rem;
+  align-items: center;
+}
+.post .post-add-comment img {
+  height: 2rem;
+}
+.post .post-add-comment input {
+  flex: 1;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #8E8E8E;
+}
+.post .post-add-comment button {
+  margin-left: auto;
+  all: unset;
+  color: #0095F6;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -11,6 +11,11 @@ html {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 input {
   -webkit-appearance: none;
   border-radius: 0;
@@ -21,14 +26,14 @@ ol, ul {
 }
 
 body {
-  width: 70vw;
-  margin: 7rem auto;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 90%;
 }
 body main {
+  width: 70vw;
+  margin: 7rem auto;
   padding-bottom: 2rem;
 }
 body main .main-left {
@@ -91,6 +96,11 @@ body main .main-right .login .login-form button {
   width: 250px;
   border-radius: 3px;
 }
+body main .main-right .login .login-form button:hover,
+body main .main-right .login .login-form button:focus {
+  transition: 0.1s;
+  background-color: #0095F6;
+}
 body main .main-right .login .login-facebook {
   border-top: 1px solid #DBDBDB;
 }
@@ -99,7 +109,7 @@ body main .main-right .login .login-facebook legend {
   padding: 1em;
   color: #8E8E8E;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 body main .main-right .login .login-facebook .login-facebook__button {
   display: flex;
@@ -132,13 +142,17 @@ body main .main-right .sing p {
   text-align: center;
 }
 body main .main-right .sing a {
-  font-weight: bold;
+  font-weight: 500;
+  color: #0095F6;
 }
 body main .main-right .download {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 1rem 1rem;
+}
+body main .main-right .download p {
+  font-size: 0.8rem;
 }
 body main .main-right .download div {
   display: flex;
@@ -156,12 +170,46 @@ body footer {
 }
 body footer a {
   font-size: 0.8rem;
+  color: #8E8E8E;
+  font-size: 0.7rem;
   margin: 0 0.5rem;
 }
 
 main {
   display: flex;
   justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #DBDBDB;
+  width: 100vw;
+  padding: 1rem 1.5rem;
+}
+nav .nav-logo {
+  height: 1.8rem;
+  margin: auto 0;
+}
+nav .nav-search {
+  margin: auto auto;
+}
+nav .nav-search input {
+  border: 1px solid #DBDBDB;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+nav .nav-control {
+  display: flex;
+  margin: auto 0;
+}
+nav .nav-control img {
+  height: 1.6rem;
+  margin: 0 0.5rem;
+}
+nav .nav-control img:last-child {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=index.css.map */

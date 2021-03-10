@@ -2,14 +2,14 @@
 @use '../base/fonts';
 
 body {
-    width: 70vw;
-    margin: 7rem auto;
     font-family: fonts.$roboto;
     display: flex;
     flex-direction: column;
     min-height: 90%;
 
     main {
+        width: 70vw;
+        margin: 7rem auto;
         padding-bottom: 2rem;
         .main-left {
             display: flex;
@@ -77,6 +77,11 @@ body {
                         width: 250px;
                         border-radius: 3px;
                     }
+                    button:hover,
+                    button:focus {
+                        transition: 0.1s;
+                        background-color: colors.$blue;
+                    }
                 }
 
                 .login-facebook {
@@ -87,7 +92,7 @@ body {
                             padding: 1em;
                             color: colors.$gray;
                             font-weight: bold;
-                            font-size: 0.9em;
+                            font-size: 0.85em;
                         }
 
                         .login-facebook__button {
@@ -113,9 +118,7 @@ body {
                             align-self: center;
                             margin: 2em;
                         }
-
                 }
-
             }
             .sing {
                 border: 1px solid colors.$light-gray;
@@ -127,7 +130,8 @@ body {
                     text-align: center;
                 }
                 a {
-                    font-weight: bold;
+                    font-weight: 500;
+                    color: colors.$blue;
                 }
             }
             .download {
@@ -135,6 +139,9 @@ body {
                 flex-direction: column;
                 text-align: center;
                 padding: 1rem 1rem;
+                p {
+                    font-size: 0.8rem;
+                }
                 div {
                     display: flex;
                     justify-content: space-evenly;
@@ -154,6 +161,8 @@ body {
         text-align: center;
         a {
             font-size: 0.8rem;
+            color: colors.$gray;
+            font-size: 0.7rem;
             margin: 0 0.5rem;
         }
     }

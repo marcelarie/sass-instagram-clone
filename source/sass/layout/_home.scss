@@ -1,0 +1,36 @@
+@use '../base/colors';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid colors.$light-gray;
+    width: 100vw;
+    padding: 1rem 1.5rem;
+
+    .nav-logo {
+        height: 1.8rem;
+        margin: auto 0;
+    }
+    
+    .nav-search {
+        margin: auto auto;
+        input {
+            border: 1px solid colors.$light-gray;
+            padding: 0.3rem 0.5rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+
+    .nav-control {
+        display: flex;
+        margin: auto 0;
+        img {
+            height: 1.6rem;
+            margin: 0 0.5rem;
+        }
+        img:last-child {
+            border-radius: 50%;
+        }
+    }
+}

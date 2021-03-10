@@ -1,0 +1,21 @@
+@use '../helpers';
+
+@mixin login-download {
+    .download {
+        @include helpers.flex(column);
+        text-align: center;
+        padding: 1rem 1rem;
+        p {
+            font-size: 0.8rem;
+        }
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: 1em 0;
+        }
+        img {
+            width: 130px;
+        }
+    }
+}

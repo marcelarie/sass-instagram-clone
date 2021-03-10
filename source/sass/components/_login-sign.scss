@@ -1,0 +1,18 @@
+@use '../base/colors';
+
+@mixin login-sign {
+    .sing {
+        border: 1px solid colors.$light-gray;
+        padding: 1.35rem 2rem;
+        margin-top: 1em;
+         
+        p {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        a {
+            font-weight: 500;
+            color: colors.$blue;
+        }
+    }
+}

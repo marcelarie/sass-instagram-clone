@@ -1,0 +1,15 @@
+@use '../base/colors';
+
+@mixin footer {
+    footer {
+        margin-top: auto;
+        margin-bottom: 5rem;
+        text-align: center;
+        a {
+            font-size: 0.8rem;
+            color: colors.$gray;
+            font-size: 0.7rem;
+            margin: 0 0.5rem;
+        }
+    }
+}

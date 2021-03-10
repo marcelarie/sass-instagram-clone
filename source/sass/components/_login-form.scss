@@ -1,0 +1,32 @@
+@use '../base/colors';
+@use '../helpers';
+@use 'login-button';
+
+
+@mixin login-form() {
+    form {
+        @include helpers.flex(column);
+        align-items: center;
+        margin: 2em 0 0 0;
+    }
+
+    input {
+        border: 1px solid colors.$light-gray;
+        padding: 9px 0 10px 8px;
+        text-align: left;
+        font-size: 0.8em;
+        min-width: 250px;
+        border-radius: 2.5px;
+        margin-bottom: 0.5em;
+        color: colors.$gray;
+        vertical-align: middle;
+        text-overflow: ellipsis;
+        margin-bottom: 1em;
+    }
+
+    input:focus {
+        background-color: colors.$extra-light-blue;
+        border: 1px solid colors.$gray;
+        outline: none;
+    }
+}

@@ -1,20 +1,17 @@
 @use '../base/colors';
 @use '../base/fonts';
+@use '../helpers';
+@use '../components';
 
 body {
     font-family: fonts.$roboto;
-    display: flex;
-    flex-direction: column;
+    @include helpers.flex(column);
     min-height: 90%;
 
     main {
-        width: 70vw;
-        margin: 7rem auto;
-        padding-bottom: 2rem;
         .main-left {
-            display: flex;
+            @include helpers.flex(column);
             justify-content: space-around;
-            flex-direction: column;
             img {
                 width: 95%;
                 background-image: url(/public/img/login-a.jpg);
@@ -26,15 +23,13 @@ body {
         }
 
         .main-right {
-            display: flex;
-            flex-direction: column;
+            @include helpers.flex(column);
             margin-top: 2em;
 
             .login {
                 border: 1px solid colors.$light-gray;
                 padding: 1rem 2rem 0 2rem;
-                display: flex;
-                flex-direction: column;
+                @include helpers.flex(column);
 
                 .login-logo {
                     width: 180px;
@@ -42,46 +37,8 @@ body {
                 }
 
                 .login-form {
-                    form {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin: 2em 0 0 0;
-                    }
-
-                    input {
-                        border: 1px solid colors.$light-gray;
-                        padding: 9px 0 10px 8px;
-                        text-align: left;
-                        font-size: 0.8em;
-                        min-width: 250px;
-                        border-radius: 2.5px;
-                        margin-bottom: 0.5em;
-                        color: colors.$gray;
-                        vertical-align: middle;
-                        text-overflow: ellipsis;
-                        margin-bottom: 1em;
-                    }
-
-                    input:focus {
-                        background-color: colors.$extra-light-blue;
-                        border: 1px solid colors.$gray;
-                        outline: none;
-                    }
-
-                    button {
-                        background-color: colors.$light-blue;
-                        color: white;
-                        font-weight: bold;
-                        padding: 0.5em 3em;
-                        width: 250px;
-                        border-radius: 3px;
-                    }
-                    button:hover,
-                    button:focus {
-                        transition: 0.1s;
-                        background-color: colors.$blue;
-                    }
+                    @include components.login-form();
+                    @include components.login-button();
                 }
 
                 .login-facebook {
@@ -95,22 +52,7 @@ body {
                             font-size: 0.85em;
                         }
 
-                        .login-facebook__button {
-                            display: flex;
-                            justify-content: center;
-                            margin: 0.5em 0;
-
-                            img {
-                                width: 25px;
-                                margin: 0 0.3em;
-                            }
-                            a {
-                                margin: auto 0;
-                                color: colors.$facebook-blue;
-                                font-weight: 500;
-                                font-size: 0.9em;
-                            }
-                        }
+                        @include components.login-facebook();
 
                         .login-facebook__password {
                             font-size: 0.8em;
@@ -120,52 +62,11 @@ body {
                         }
                 }
             }
-            .sing {
-                border: 1px solid colors.$light-gray;
-                padding: 1.35rem 2rem;
-                margin-top: 1em;
-                 
-                p {
-                    font-size: 0.9rem;
-                    text-align: center;
-                }
-                a {
-                    font-weight: 500;
-                    color: colors.$blue;
-                }
-            }
-            .download {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                padding: 1rem 1rem;
-                p {
-                    font-size: 0.8rem;
-                }
-                div {
-                    display: flex;
-                    justify-content: space-evenly;
-                    width: 100%;
-                    margin: 1em 0;
-                }
-                img {
-                    width: 130px;
-                }
-            }
+            @include components.login-sign();
+            @include components.login-download();
         }
     }
-        
-    footer {
-        margin-top: auto;
-        margin-bottom: 5rem;
-        text-align: center;
-        a {
-            font-size: 0.8rem;
-            color: colors.$gray;
-            font-size: 0.7rem;
-            margin: 0 0.5rem;
-        }
-    }
+    @include components.footer();
 }
 
 

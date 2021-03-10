@@ -1,0 +1,20 @@
+@use '../base/colors';
+
+@mixin login-facebook {
+    .login-facebook__button {
+        display: flex;
+        justify-content: center;
+        margin: 0.5em 0;
+
+        img {
+            width: 25px;
+            margin: 0 0.3em;
+        }
+        a {
+            margin: auto 0;
+            color: colors.$facebook-blue;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+    }
+}

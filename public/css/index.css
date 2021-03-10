@@ -31,15 +31,10 @@ body {
   flex-direction: column;
   min-height: 90%;
 }
-body main {
-  width: 70vw;
-  margin: 7rem auto;
-  padding-bottom: 2rem;
-}
 body main .main-left {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  justify-content: space-around;
 }
 body main .main-left img {
   width: 95%;
@@ -178,6 +173,9 @@ body footer a {
 main {
   display: flex;
   justify-content: center;
+  width: 70vw;
+  margin: 7rem auto;
+  padding-bottom: 2rem;
 }
 
 nav {

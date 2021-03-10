@@ -1,0 +1,17 @@
+@use '../base/colors';
+
+@mixin login-button {
+    button {
+        background-color: colors.$light-blue;
+        color: white;
+        font-weight: bold;
+        padding: 0.5em 3em;
+        width: 250px;
+        border-radius: 3px;
+    }
+    button:hover,
+    button:focus {
+        transition: 0.1s;
+        background-color: colors.$blue;
+    }
+}
